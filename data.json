@@ -1,0 +1,463 @@
+{
+  "cabinetPositions": [
+    {
+      "title": "Commerce Secretary",
+      "description": "The Commerce Department has been a perennial target for budget cuts, but the secretary oversees a diverse portfolio, including the census, the Bureau of Economic Analysis and the National Oceanic and Atmospheric Administration.",
+      "senate_confirmation": true,
+      "predictions": [
+        {
+          "name": "Wilbur Ross",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/ross-300.jpg",
+          "description": "Mr. Trump is expected to nominate Mr. Ross, an investor whose fortune is estimated by Forbes to be $2.9 billion. Mr. Ross has said  the United States must free itself from the &#x201C;bondage&#x201D; of &#x201C;bad trade agreements,&#x201D; and has advocated threats to impose steep tariffs on China.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "Education Secretary",
+      "description": "Mr. Trump has said he wants to drastically shrink the Education Department and shift responsibilities for curriculum research, development and educational aid to state and local governments.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Betsy DeVos",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/devos-300.jpg",
+          "description": "Mr. Trump has selected Ms. DeVos, a former chairwoman of the Michigan Republican Party and an education activist who is a passionate believer in school choice, as his nominee.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "U.N. Ambassador",
+      "description": "Second to the secretary of state, the United States ambassador to the United Nations will be the primary face of America to the world, representing the country’s interests at the Security Council on a host of issues, from Middle East peace to nuclear proliferation.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Nikki R. Haley",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/haley-300.jpg",
+          "description": "Mr. Trump has selected Ms. Haley, the governor of South Carolina, as his nominee. The daughter of immigrants from India, she was a prominent and frequent critic of Mr. Trump early in his run.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "Secretary of Housing and Urban Development",
+      "description": "The secretary oversees fair-housing laws, the development of affordable housing and access to mortgage insurance. As a real-estate developer, Mr. Trump is attuned to the tax breaks for housing development.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Ben Carson",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/carson-300.jpg",
+          "description": "Mr. Trump is nearing an announcement of the former neurosurgeon and presidential candidate to be his nominee to lead HUD.  Dr. Carson has said that he does not want to work in government, and it was not clear whether he had accepted the offer.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "C.I.A. Director",
+      "description": "Mr. Trump takes over at a time of diverse and complex threats to American security. The new C.I.A. director will have to decide whether to undo a C.I.A. “modernization” plan put in place this year by Director John O. Brennan, and how to proceed if the president-elect orders a resumption of harsh interrogation tactics — critics have described the tactics as torture — for terrorism suspects.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Mike Pompeo",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/pompeo-300.jpg",
+          "description": "Mr. Trump has selected Mr. Pompeo, Representative of Kansas and a former Army officer as his nominee. Mr. Pompeo is a member of the House Intelligence Committee and was a sharp critic of Hillary Clinton during the congressional investigation into the 2012 attack on the American diplomatic compound in Benghazi, Libya.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "Attorney General",
+      "description": "The nation's top law enforcement official will have the authority for carrying out Mr. Trump's “law and order” platform. The nominee can change how civil rights laws are enforced.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Jeff Sessions",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/sessions-300.jpg",
+          "description": "of Alabama, as his nominee. Mr. Sessions is a strong proponent of strict immigration enforcement, reduced spending and tough-on-crime measures. His nomination for a federal judgeship in 1986 was rejected because of racially charged comments and actions, which are very likely to become an issue as he faces another set of Senate confirmation hearings.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "National Security Adviser",
+      "description": "The national security adviser, although not a member of the cabinet, is a critical gatekeeper for policy proposals from the State Department, the Pentagon and other agencies, a function that takes on more importance given Mr. Trump's lack of experience in elective office.",
+      "senate_confirmation": false,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Michael T. Flynn",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/flynn-300.jpg",
+          "description": "Mr. Trump has selected the retired Army lieutenant general and former director of the Defense Intelligence Agency. General Flynn has been outspoken about his view of the threat posed by Islamist militancy and was an <a href=\"http://www.nytimes.com/2016/10/19/us/politics/michael-flynn-donald-trump.html\">ardent supporter of Mr. Trump during the campaign</a>.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "White House Chief of Staff",
+      "description": "The chief of staff manages the work and personnel of the West Wing, steering the president's agenda and tending to important relationships. The role will take on outsize importance in a White House run by Mr. Trump, who has no experience in policy making and little in the way of connections to critical players in Washington.",
+      "senate_confirmation": false,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Reince Priebus",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/priebus-300.jpg",
+          "description": "Mr. Trump announced on Nov. 13 that he had chosen Mr. Priebus, the chairman of the Republican National Committee.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "Chief Strategist",
+      "description": "Stephen K. Bannon was also considered for chief of staff, but Mr. Trump instead named him chief strategist and senior counselor in the White House, saying that he and Mr. Priebus would be “working as equal partners” in the administration.",
+      "senate_confirmation": false,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Stephen K. Bannon",
+          "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/bannon-300.jpg",
+          "description": "Also on Nov. 13, Mr. Trump announced the appointment of Mr. Bannon, a right-wing media executive and the chairman of the president-elect&#x2019;s campaign. <a href=\"http://www.nytimes.com/2016/11/15/us/politics/donald-trump-presidency.html\">Many have denounced the move</a>, warning that Mr. Bannon represents racist views.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "Secretary of State",
+      "description": "Whether Mr. Trump picks an ideologue or a seasoned foreign policy hand from past Republican administrations, his challenge will be that the State Department is the centerpiece of the post-1945 experiment of alliance-building and globalism, which Mr. Trump said he would dismantle.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "John R. Bolton",
+          "image": "https://www.aei.org/wp-content/uploads/2013/08/img-johnbolton300x225_142209427666.jpg",
+          "description": "Former United States ambassador to the United Nations under George W. Bush"
+        },
+        {
+          "name": "Bob Corker",
+          "image": "http://media.jrn.com/images/K0012272545--590520.JPG",
+          "description": "Senator from Tennessee and chairman of the Senate Foreign Relations Committee"
+        },
+        {
+          "name": "Rudolph W. Giuliani",
+          "image": "http://www.celebritygyaan.com/wp-content/uploads/2015/08/contenders-rudy-giuliani-01-af.jpg",
+          "description": "Former New York mayor who campaign officials said is the leading contender for the job"
+        },
+        {
+          "name": "John F. Kelly",
+          "image": "http://cmsimg.marinecorpstimes.com/apps/pbcsi.dll/bilde?Site=M6&Date=20120729&Category=NEWS&ArtNo=207290307&Ref=AR&MaxW=640&Border=0&Marine-Corps-general-take-over-SOUTHCOM",
+          "description": "A retired four-star Marine general whose son was killed in combat in Afghanistan"
+        },
+        {
+          "name": "Zalmay Khalilzad",
+          "image": "http://www.trbimg.com/img-54120490/turbine/la-fg-austria-unfreezes-khalilzad-accounts-20140911",
+          "description": "Former United States ambassador to Afghanistan"
+        },
+        {
+          "name": "David H. Petraeus",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/DCIA_David_Petraeus.jpg/220px-DCIA_David_Petraeus.jpg",
+          "description": "Former four-star Army general and director of the Central Intelligence Agency, who resigned amid a scandal involving the mishandling of classified material."
+        },
+        {
+          "name": "Mitt Romney",
+          "image": "http://cdn-6.historyguy.com/politics/mitt-romney.jpg",
+          "description": "The 2012 Republican presidential nominee and former governor of Massachusetts"
+        }
+      ]
+    },
+    {
+      "title": "Treasury Secretary",
+      "description": "The secretary will be responsible for government borrowing in financial markets, assisting in any rewrite of the tax code and overseeing the Internal Revenue Service. The Treasury Department also carries out or lifts financial sanctions against foreign enemies — which are key to President Obama’s Iran deal and rapprochement with Cuba.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Thomas Barrack Jr.",
+          "image": "http://i.forbesimg.com/media/lists/people/thomas-barrack_416x416.jpg",
+          "description": "Founder, chairman and executive chairman of Colony Capital; private equity and real estate investor"
+        },
+        {
+          "name": "Jeb Hensarling",
+          "image": "http://mediad.publicbroadcasting.net/p/kera/files/styles/x_large/public/201409/2013_hensarling_headshot__official_.jpg",
+          "description": "Representative from Texas and chairman of the House Financial Services Committee"
+        },
+        {
+          "name": "Steven Mnuchin",
+          "image": "http://s.newsweek.com/sites/www.newsweek.com/files/styles/embed-lg/public/2016/11/30/1130mnuchiintrump01.JPG",
+          "description": "Former Goldman Sachs executive and Mr. Trump's campaign finance chairman",
+          "confirmed": true
+        },
+        {
+          "name": "Tim Pawlenty",
+          "image": "https://pbs.twimg.com/profile_images/436258099981066240/cAP2W1-L.jpeg",
+          "description": "Former Minnesota governor"
+        }
+      ]
+    },
+    {
+      "title": "Defense Secretary",
+      "description": "The incoming secretary will shape the fight against the Islamic State while overseeing a military that is struggling to put in place two Obama-era initiatives: integrating women into combat roles and allowing transgender people to serve openly. Both could be rolled back.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Tom Cotton",
+          "description": "Senator from Arkansas who saw combat in Iraq and Afghanistan as an Army infantry officer"
+        },
+        {
+          "name": "Stephen J. Hadley",
+          "description": "National security adviser under George W. Bush"
+        },
+        {
+          "name": "Duncan Hunter",
+          "description": "Representative from California and Marine reserve officer who served in Iraq and Afghanistan"
+        },
+        {
+          "name": "Jon Kyl",
+          "description": "Former senator from Arizona"
+        },
+        {
+          "name": "James N. Mattis",
+          "image": "http://www.patriotortraitor.com/wp-content/uploads/2013/07/General-James-Mattis1.jpg",
+          "description": "Retired Marine Corps general and former head of United States Central Command",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "Director of National Intelligence",
+      "description": "The person who holds this post is the president’s principal adviser on intelligence and oversees the entire military and civilian intelligence apparatus. The coordination between the intelligence agencies of the military and civilian wings will be vital for the war on the Islamic State.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "Rudolph W. Giuliani",
+          "description": "Former New York mayor"
+        },
+        {
+          "name": "Michael S. Rogers",
+          "description": "Navy admiral and director of the National Security Agency. Choosing Mr. Rogers may be complicated because the Obama administration is currently considering removing him after frustrations over the speed at which he moved to combat the Islamic State."
+        }
+      ]
+    },
+    {
+      "title": "Interior Secretary",
+      "description": "The Interior Department manages the nation’s public lands and waters. The next secretary will decide the fate of Obama-era rules that stop public land development; curb the exploration of oil, coal and gas; and promote wind and solar power on public lands.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "Jan Brewer",
+          "description": "Former governor of Arizona"
+        },
+        {
+          "name": "Robert E. Grady",
+          "description": "Gryphon Investors partner"
+        },
+        {
+          "name": "Harold G. Hamm",
+          "description": "Chief executive of Continental Resources, an oil and gas company"
+        },
+        {
+          "name": "Forrest Lucas",
+          "description": "President of Lucas Oil Products, which manufactures automotive lubricants, additives and greases."
+        },
+        {
+          "name": "Sarah Palin",
+          "description": "Former governor of  Alaska"
+        }
+      ]
+    },
+    {
+      "title": "Agriculture Secretary",
+      "description": "The agriculture secretary oversees America's farming industry, inspects food quality and provides income-based food assistance. The department also helps develop international markets for American products, giving the next secretary partial responsibility to carry out Mr. Trump's positions on trade.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "Sam Brownback",
+          "description": "Kansas governor"
+        },
+        {
+          "name": "Chuck Conner",
+          "description": "Chief executive officer of the National Council of Farmer Cooperatives"
+        },
+        {
+          "name": "Sid Miller",
+          "description": "commissioner of agriculture for Texas"
+        },
+        {
+          "name": "Sonny Perdue",
+          "description": "Former governor of Georgia"
+        }
+      ]
+    },
+    {
+      "title": "Labor Secretary",
+      "description": "The Labor Department enforces rules that protect the nation’s workers, distributes benefits to the unemployed and publishes economic data like the monthly jobs report. The new secretary will be in charge of keeping Mr. Trump’s promise to dismantle many Obama-era rules covering the vast work force of federal contractors.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Victoria A. Lipnic",
+          "description": "Equal Employment Opportunity commissioner and workforce policy counsel to the House Committee on Education and the Workforce."
+        },
+        {
+          "name": "Andrew F. Puzder",
+          "image": "http://cdn.aattp.org/wp-content/uploads/2014/07/Untitled-158.jpg",
+          "description": "Mr. Trump’s expected choice is the chief executive of CKE Restaurants — and a donor to his campaign — who has criticized the Obama administration’s labor policies.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "Health and Human Services Secretary",
+      "description": "The secretary will help Mr. Trump achieve one of his central campaign promises: to repeal and replace the Affordable Care Act. The department approves new drugs, regulates the food supply, operates biomedical research, and runs Medicare and Medicaid, which insure more than 100 million people.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "Mike Huckabee",
+          "description": "Former Arkansas governor and 2016 presidential candidate"
+        },
+        {
+          "name": "Bobby Jindal",
+          "description": "Former Louisiana governor who served as secretary of the Louisiana Department of Health and Hospitals."
+        },
+        {
+          "name": "Tom Price",
+          "description": "Representative from Georgia"
+        },
+        {
+          "name": "Rick Scott",
+          "description": "Florida governor and former chief executive of a large hospital chain"
+        }
+      ]
+    },
+    {
+      "title": "Energy Secretary",
+      "description": "Despite its name, the primary purview of the Energy Department is to protect and manage the nation’s arsenal of nuclear weapons.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "James L. Connaughton",
+          "description": "Chief executive of Nautilus Data Technologies and former environmental adviser to President George W. Bush."
+        },
+        {
+          "name": "Robert E. Grady",
+          "description": "Gryphon Investors partner"
+        },
+        {
+          "name": "Harold G. Hamm",
+          "description": "Chief executive of Continental Resources, an oil and gas company"
+        }
+      ]
+    },
+    {
+      "title": "Secretary of Veterans Affairs",
+      "description": "The secretary will face the task of improving the image of a department Mr. Trump has widely criticized. Mr. Trump repeatedly argued that the Obama administration neglected the country's veterans, and he said that improving their care was one of his top priorities.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "Scott Brown",
+          "description": "Former senator from Massachusetts"
+        },
+        {
+          "name": "Jeff Miller",
+          "description": "representative from Florida who was chairman of the House Veterans Affairs Committee"
+        }
+      ]
+    },
+    {
+      "title": "Homeland Security Secretary",
+      "description": "The hodgepodge agency, formed after the attacks of Sept. 11, 2001, has one key role in the Trump administration: guarding the United States’ borders. If Mr. Trump makes good on his promises of widespread deportations and building a wall, this secretary will have to carry them out.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Joe Arpaio",
+          "description": "Departing sheriff of Maricopa County, Ariz"
+        },
+        {
+          "name": "David A. Clarke Jr.",
+          "description": "Milwaukee County sheriff"
+        },
+        {
+          "name": "Rudolph W. Giuliani",
+          "description": "Former mayor of New York"
+        },
+        {
+          "name": "John F. Kelly",
+          "image": "http://www.executivegov.com/wp-content/uploads/2012/01/JohnKelly.jpg",
+          "description": "A retired four-star Marine general whose son was killed in combat in Afghanistan",
+          "confirmed": true
+        },
+        {
+          "name": "Kris Kobach",
+          "description": "Kansas secretary of state and a top adviser to Mr. Trump on his hard-line immigration policies"
+        },
+        {
+          "name": "Michael McCaul",
+          "description": "Representative from Texas and chairman of the House Homeland Security Committee"
+        }
+      ]
+    },
+    {
+      "title": "E.P.A. Administrator",
+      "description": "The Environmental Protection Agency, which issues and oversees environmental regulations, is under threat from the president-elect, who has vowed to dismantle the agency “in almost every form.”",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Myron Ebell",
+          "description": "A director at the Competitive Enterprise Institute and a prominent climate change skeptic."
+        },
+        {
+          "name": "Robert E. Grady",
+          "description": "Gryphon Investors partner who was involved in drafting the Clean Air Act Amendments of 1990."
+        },
+        {
+          "name": "Jeffrey R. Holmstead",
+          "description": "Lawyer with Bracewell L.L.P. and former deputy E.P.A. administrator in the George W. Bush administration."
+        },
+        {
+          "name": "Scott Pruitt",
+          "image": "http://media2.kjrh.com//photo/2012/06/29/agpruitt_20120629093902_320_240.JPG",
+          "description": "Mr. Trump has selected the Oklahoma attorney general, who is a close ally of the fossil fuel industry.",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "title": "U.S. Trade Representative",
+      "description": "The president’s chief trade negotiator will have the odd role of opposing new trade deals, trying to rewrite old ones and bolstering the enforcement of what Mr. Trump sees as unfair trade, especially with China.",
+      "senate_confirmation": true,
+      "confirmed": false,
+      "predictions": [
+        {
+          "name": "Dan DiMicco",
+          "description": "Former chief executive of Nucor Corporation, a steel production company, and a critic of Chinese trade practices."
+        }
+      ]
+    },
+    {
+      "title": "Transportation Secretary",
+      "description": "The next transportation secretary will oversee Mr. Trump’s campaign pledge to increase infrastructure funding to rebuild America's roads, bridges, airports and transit systems.",
+      "senate_confirmation": true,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Elaine L. Chao",
+          "image":"http://3hhqge2r2z7q1edp36mwlv31.wpengine.netdna-cdn.com/wp-content/uploads/2015/05/Secretary-Chao-Bio-Photo.jpg",
+          "description": "Mr. Trump has selected Ms. Chao, the labor secretary under President George W. Bush. Ms. Chao, who is married to the Senate majority leader, Mitch McConnell, has been a fixture of the Republican establishment in Washington.",
+          "confirmed": true
+        }
+      ]
+    }
+  ]
+}

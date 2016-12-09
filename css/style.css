@@ -304,7 +304,7 @@ div.position-bios .bio-item.active {
 }
 .list-of-positions {
     position: relative;
-    margin-top: 370px;
+    margin-top: 300px;
     height: 700px !important;
     pointer-events: none;
 }

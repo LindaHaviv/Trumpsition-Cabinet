@@ -7,14 +7,14 @@
 }*/
 .cabinet {
     position: absolute;
-    width: 800px;
-    height: 600px;
+    width: 700px;
+    height: 500px;
     border: 10px solid #69342b;
     box-sizing: border-box;
     -webkit-perspective: 3000;
     margin: auto;
     position: absolute;
-    top: 0px; left: 0; bottom: 0; right: 0;
+    top: 200px; left: 0; bottom: 0; right: 0;
 }
 .cabinet .cabinet-top {
     width: 104%;
@@ -228,8 +228,8 @@
     transition-duration: .6s;
 }
 .cabinet .shelf .bottle .label {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background: url(https://feedthefuture.gov/sites/all/themes/futurefeed/images/logo_ustr_color_new.png);
     background-size: cover;
     background-repeat: no-repeat;

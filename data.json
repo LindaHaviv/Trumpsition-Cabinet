@@ -205,18 +205,22 @@
       "predictions": [
         {
           "name": "Tom Cotton",
+          "image": "http://thehill.com/sites/default/files/styles/article_full/public/blogs/cottontom_020515gn.jpg?itok=McABfFdp",
           "description": "Senator from Arkansas who saw combat in Iraq and Afghanistan as an Army infantry officer"
         },
         {
           "name": "Stephen J. Hadley",
+          "image": "https://www.lowyinstitute.org/sites/default/files/images/profiles/stephen_hadley_0.jpg",
           "description": "National security adviser under George W. Bush"
         },
         {
           "name": "Duncan Hunter",
+          "image": "http://www.trbimg.com/img-57bba962/turbine/sdut-duncan-hunter-endorses-donald-trump-2016feb29",
           "description": "Representative from California and Marine reserve officer who served in Iraq and Afghanistan"
         },
         {
           "name": "Jon Kyl",
+          "image": "https://www.aei.org/wp-content/uploads/2013/08/img-jonkylhires_16402490411.jpg",
           "description": "Former senator from Arizona"
         },
         {
@@ -235,10 +239,12 @@
       "predictions": [
         {
           "name": "Rudolph W. Giuliani",
+          "image": "http://a.abcnews.com/images/Politics/ABC_rudy_giuliani_jt_140112_16x9_992.jpg",
           "description": "Former New York mayor"
         },
         {
           "name": "Michael S. Rogers",
+          "image": "http://images.politico.com/global/2014/03/11/20140311-potd11_605.jpg",
           "description": "Navy admiral and director of the National Security Agency. Choosing Mr. Rogers may be complicated because the Obama administration is currently considering removing him after frustrations over the speed at which he moved to combat the Islamic State."
         }
       ]
@@ -251,22 +257,27 @@
       "predictions": [
         {
           "name": "Jan Brewer",
+          "image": "http://www.crewsmostcorrupt.org/page/-/images/worst_governors/headshots/Arizona_Brewer_Jan.jpg",
           "description": "Former governor of Arizona"
         },
         {
           "name": "Robert E. Grady",
+          "image": "http://www.gryphon-inv.com/wp-content/uploads/2016/05/REG-e1464277015390.jpg",
           "description": "Gryphon Investors partner"
         },
         {
           "name": "Harold G. Hamm",
+          "image": "http://www.contres.com/sites/default/files/styles/profile_detail/public/profile/hamm_018.jpg?itok=L7aI3dmd",
           "description": "Chief executive of Continental Resources, an oil and gas company"
         },
         {
           "name": "Forrest Lucas",
+          "image": "http://www.gannett-cdn.com/-mm-/cca8ec211267b97d2c818d8f7f98ce2c7fff5f29/c=153-9-2536-1801&r=x404&c=534x401/local/-/media/Indianapolis/2014/10/16/forrestlucas.jpg",
           "description": "President of Lucas Oil Products, which manufactures automotive lubricants, additives and greases."
         },
         {
           "name": "Sarah Palin",
+          "image": "http://instinctmagazine.com/sites/instinctmagazine.com/files/images/blog_posts/Nigel%20Campbell/2016/11/09/sarah%20palin.jpg",
           "description": "Former governor of  Alaska"
         }
       ]
@@ -279,18 +290,22 @@
       "predictions": [
         {
           "name": "Sam Brownback",
+          "image": "http://s3-origin-images.politico.com/2015/01/16/150116_sam_brownback_ap_629.jpg",
           "description": "Kansas governor"
         },
         {
           "name": "Chuck Conner",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Charles_F._Conner,_official_USDA_photo_portrait.jpg/220px-Charles_F._Conner,_official_USDA_photo_portrait.jpg",
           "description": "Chief executive officer of the National Council of Farmer Cooperatives"
         },
         {
           "name": "Sid Miller",
+          "image": "https://pbs.twimg.com/profile_images/378800000609927940/2d3ccda997836e87f655ec9db1f9ac5c_400x400.jpeg",
           "description": "commissioner of agriculture for Texas"
         },
         {
           "name": "Sonny Perdue",
+          "image": "http://bipartisanpolicy.org/wp-content/uploads/2013/01/Purdue-Sidebar.jpg",
           "description": "Former governor of Georgia"
         }
       ]
@@ -303,6 +318,7 @@
       "predictions": [
         {
           "name": "Victoria A. Lipnic",
+          "image": "https://www.eeoc.gov/eeoc/images/lipnic.jpg",
           "description": "Equal Employment Opportunity commissioner and workforce policy counsel to the House Committee on Education and the Workforce."
         },
         {
@@ -321,18 +337,22 @@
       "predictions": [
         {
           "name": "Mike Huckabee",
+          "image": "http://radio.foxnews.com/toddstarnes/wp-content/uploads/2016/01/mike-huckabee.jpg",
           "description": "Former Arkansas governor and 2016 presidential candidate"
         },
         {
           "name": "Bobby Jindal",
+          "image": "http://www.mrctv.org/sites/default/files/uploads/jindal4.jpg",
           "description": "Former Louisiana governor who served as secretary of the Louisiana Department of Health and Hospitals."
         },
         {
           "name": "Tom Price",
+          "image": "http://www.unitedliberty.org/files/images/price.jpg",
           "description": "Representative from Georgia"
         },
         {
           "name": "Rick Scott",
+          "image": "https://d229l5sflpl9cp.cloudfront.net/canphoto/124204_lg.jpg",
           "description": "Florida governor and former chief executive of a large hospital chain"
         }
       ]
@@ -345,14 +365,17 @@
       "predictions": [
         {
           "name": "James L. Connaughton",
+          "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/062/322/36f804e.jpg",
           "description": "Chief executive of Nautilus Data Technologies and former environmental adviser to President George W. Bush."
         },
         {
           "name": "Robert E. Grady",
+          "image": "http://www.gryphon-inv.com/wp-content/uploads/2016/05/REG-e1464277015390.jpg",
           "description": "Gryphon Investors partner"
         },
         {
           "name": "Harold G. Hamm",
+          "image": "http://www.contres.com/sites/default/files/styles/profile_detail/public/profile/hamm_018.jpg?itok=L7aI3dmd",
           "description": "Chief executive of Continental Resources, an oil and gas company"
         }
       ]
@@ -365,10 +388,12 @@
       "predictions": [
         {
           "name": "Scott Brown",
+          "image": "http://www.aim.org/wp-content/uploads/2014/04/scott-brown.jpg",
           "description": "Former senator from Massachusetts"
         },
         {
           "name": "Jeff Miller",
+          "image": "https://www.congress.gov/img/member/114_rp_fl_1_miller_jeff.jpg",
           "description": "representative from Florida who was chairman of the House Veterans Affairs Committee"
         }
       ]
@@ -381,14 +406,17 @@
       "predictions": [
         {
           "name": "Joe Arpaio",
+          "image": "http://i2.cdn.cnn.com/cnnnext/dam/assets/150724103651-sheriff-joe-arpaio-7-23-15-large-169.png",
           "description": "Departing sheriff of Maricopa County, Ariz"
         },
         {
           "name": "David A. Clarke Jr.",
+          "image": "http://media.jrn.com/images/b99121237z.1_20131015232809_000_gio2vss1.2-0.jpg",
           "description": "Milwaukee County sheriff"
         },
         {
           "name": "Rudolph W. Giuliani",
+          "image": "http://www.celebritygyaan.com/wp-content/uploads/2015/08/contenders-rudy-giuliani-01-af.jpg",
           "description": "Former mayor of New York"
         },
         {
@@ -399,10 +427,12 @@
         },
         {
           "name": "Kris Kobach",
+          "image": "http://www.alternet.org/files/story_images/kriskobach.jpg",
           "description": "Kansas secretary of state and a top adviser to Mr. Trump on his hard-line immigration policies"
         },
         {
           "name": "Michael McCaul",
+          "image": "https://www.congress.gov/img/member/114_rp_tx_10_mccaul_michael.jpg",
           "description": "Representative from Texas and chairman of the House Homeland Security Committee"
         }
       ]
@@ -415,14 +445,17 @@
       "predictions": [
         {
           "name": "Myron Ebell",
+          "image": "https://heavyeditorial.files.wordpress.com/2016/11/ebell-copy-e1478803234763.jpg?quality=65&strip=all&w=780&strip=all",
           "description": "A director at the Competitive Enterprise Institute and a prominent climate change skeptic."
         },
         {
           "name": "Robert E. Grady",
+          "image": "http://www.gryphon-inv.com/wp-content/uploads/2016/05/REG-e1464277015390.jpg",
           "description": "Gryphon Investors partner who was involved in drafting the Clean Air Act Amendments of 1990."
         },
         {
           "name": "Jeffrey R. Holmstead",
+          "image": "http://www.bracewelllaw.com/assets/imagecache/profile_headshot_long/attorney/13342.jpg",
           "description": "Lawyer with Bracewell L.L.P. and former deputy E.P.A. administrator in the George W. Bush administration."
         },
         {
@@ -441,6 +474,7 @@
       "predictions": [
         {
           "name": "Dan DiMicco",
+          "image": "https://d3n8a8pro7vhmx.cloudfront.net/prosperousamerica/pages/1837/attachments/original/1467033666/Dan_DiMicco_large.jpg?1467033666",
           "description": "Former chief executive of Nucor Corporation, a steel production company, and a critic of Chinese trade practices."
         }
       ]

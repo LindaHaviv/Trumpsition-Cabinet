@@ -1,9 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css");
 @import url("./cabinet.css");
-
 body {
     /*background: black;*/
-
 }
 
 h2 {
@@ -12,17 +10,20 @@ h2 {
     color: white;
     font-size: 20px;
 }
+
 p {
     /*  text-align: center;*/
-
     color: white;
     font-size: 14px;
     /*  margin: 0px 500px;*/
 }
 
+
 /***HEADER****/
 
+
 /* credit: https://codepen.io/jaflo/pen/DwFAq */
+
 #wrap {
     position: absolute;
     top: 0;
@@ -33,7 +34,9 @@ p {
     padding: 0;
     overflow: hidden;
 }
-#header {
+
+
+/*#header {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,21 +44,22 @@ p {
     height: 100px;
     margin: 0;
     padding: 0;
-    /*animation: move 5s infinite linear;
-    background: url(http://www.foxnews.com/live-coverage/sites/foxnews.com.live-coverage/files/styles/style1920x421/public/1920x421-trump-transition-a.png);*/
+    animation: move 5s infinite linear;
+    background: url(http://www.foxnews.com/live-coverage/sites/foxnews.com.live-coverage/files/styles/style1920x421/public/1920x421-trump-transition-a.png);
     height: 200px;
     background-size: auto 100%;
     border-bottom: 5px solid black;
-}
+}*/
+
 @keyframes move {
     from {
         background-position-x: 0;
     }
-
     to {
         background-position-x: -1350px;
     }
 }
+
 
 /*
 #header > div {
@@ -67,36 +71,60 @@ p {
   position: absolute;
 }
 */
+
 #wrap > .info {
     width: 100%;
     /*padding: 24px;*/
-
     position: absolute;
     bottom: 0;
     left: 0;
     background: #000;
-   /* background: rgba(0, 0, 0, .5);*/
+    /* background: rgba(0, 0, 0, .5);*/
     color: #C6A15A;
     text-align: center;
 }
-#main-content {
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background: url('https://static01.nyt.com/images/2010/08/31/us/31oval/31oval-custom12.jpg') no-repeat center center fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+html,
+body,
+#background-elm {
+    height: 100%;
 }
+
+#background-img {
+    margin-top: 100px;
+    text-align: center;
+    background-image: url(https://www.jimmycarterlibrary.gov/museum/ovaloffice.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+}
+
+#main-content {
+    text-align: center;
+}
+
+#background-overlay {
+    margin-top: 100px;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background: rgba(0, 0, 0, 0.43);
+    width: 100%;
+}
+
 .key-positions {
     text-align: center;
     margin: 0px 20%;
     padding: 10px;
+    position: absolute;
+    top: 81px;
 }
 
+
 /********CIRCLE ANIMATION********/
+
 .circle-list {
     position: absolute;
     left: 50%;
@@ -106,11 +134,13 @@ p {
     transform: translate(-50%, -50%);
     transition: all 300ms ease;
 }
+
 .circle-list,
 .circle-list button {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
 }
+
 .circle-list button.position-title {
     position: relative;
     width: 100%;
@@ -126,6 +156,7 @@ p {
     transition: all .1s;
 }
 
+
 /*.circle-list button.candidate-button {
   border-radius: 50%;
   border: 0;
@@ -137,13 +168,16 @@ p {
 .circle-list button.candidate-button.hover{
   background: white;
 }*/
+
 .circle-list button.position-title:hover,
 .circle-list button.position-title.hover {
     background: #C6A15A;
 }
+
 .circle-list button:focus {
     outline: none;
 }
+
 .circle-list ul {
     position: absolute;
     list-style: none;
@@ -155,6 +189,7 @@ p {
     left: -130px;
     pointer-events: none;
 }
+
 .circle-list li {
     position: absolute;
     width: 0;
@@ -164,6 +199,7 @@ p {
     transition: all .8s ease-in-out;
     pointer-events: initial;
 }
+
 .circle-list img.circle-list-item-img {
     transition: opacity 300ms ease;
     width: 120px;
@@ -171,13 +207,17 @@ p {
     border-radius: 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
 }
+
 .circle-list.close li {
     opacity: 0;
 }
+
 .cabinet-position {
     width: 250px !important;
     height: 250px !important;
+    pointer-events: initial;
 }
+
 span.circle-list-item-label {
     position: absolute;
     z-index: 99;
@@ -193,6 +233,7 @@ span.circle-list-item-label {
     border-radius: 100%;
     padding-top: 43px;
 }
+
 div.position-bios .bio-item {
     opacity: 0;
     pointer-events: none;
@@ -215,6 +256,7 @@ div.position-bios .bio-item {
     height: 0;
     font-size: 0;
 }
+
 div.position-bios .bio-item.active {
     opacity: 1;
     pointer-events: initial;
@@ -224,6 +266,7 @@ div.position-bios .bio-item.active {
     top: calc(27% - 5px);
     font-size: 15px;
 }
+
 .circle-list > ul > li > a {
     position: relative;
     display: inline-block;
@@ -236,38 +279,46 @@ div.position-bios .bio-item.active {
     transform-origin: 338% 50%;
     border-radius: 50%;
 }
+
 .circle-list > ul > li.active > a {
     transform: scale(1.2);
 }
+
 .circle-list > ul > li > a:hover img.circle-list-item-img,
 .circle-list > ul > li.active > a img.circle-list-item-img {
     opacity: .2;
 }
+
 .circle-list > ul > li > a span {
     opacity: 0;
     transition: opacity 300ms ease, transform .8s ease-in-out;
     font-weight: 800;
     height: 100%;
 }
+
 .circle-list > ul > li.no-image > a span,
 .circle-list > ul > li > a:hover span,
 .circle-list > ul > li.active > a span {
     color: gray;
     opacity: 1;
 }
+
 .circle-list.hovered {
     width: 300px;
     height: 300px;
     font-size: 10px;
 }
+
 .circle-list.bio-circle {
     width: 310px;
     height: 310px;
 }
 
+
 /*.circle-list.bio-circle button.candidate-button {
   background: white;
 }*/
+
 .hover-text {
     position: absolute;
     top: 50%;
@@ -279,35 +330,33 @@ div.position-bios .bio-item.active {
     transform: translateY(-50%);
     color: #fff;
 }
+
 .circle-list.hovered .hover-text {
     opacity: 1;
 }
+
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */
-
     -webkit-user-select: none;
     /* Chrome/Safari/Opera */
-
     -khtml-user-select: none;
     /* Konqueror */
-
     -moz-user-select: none;
     /* Firefox */
-
     -ms-user-select: none;
     /* Internet Explorer/Edge */
-
     user-select: none;
     /* Non-prefixed version, currently
     not supported by any browser */
 }
+
 .list-of-positions {
-    position: relative;
-    margin-top: 300px;
-    height: 700px !important;
+    position: absolute;
+    height: 100% !important;
     pointer-events: none;
 }
+
 .circle-list li.candidate-confirmed img,
 .circle-list li.candidate-confirmed span {
     border: 7px solid #006400;
@@ -316,41 +365,116 @@ div.position-bios .bio-item.active {
 
 /* COUNTDOWN CLOCK */
 
-
 #clockdiv div>span,
 #clockdiv>div {
-  border-radius: 3px;
-  display: inline-block
+    border-radius: 3px;
+    display: inline-block
 }
 
 #clockdiv {
-  font-family: sans-serif;
-  color: #fff;
-  display: inline-block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px
 }
 
 #clockdiv>div {
-  padding: 10px;
+    padding: 10px;
 }
 
 #clockdiv div>span {
-  padding: 10px;
-  background: #000
+    padding: 10px;
+    background: #000
 }
 
 .smalltext {
-  padding-top: 5px;
-  font-size: 14px
+    padding-top: 5px;
+    font-size: 14px
 }
 
 .countdown-container {
-  text-align: center;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    margin: 0 auto;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.lg-hide {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    /* CLOCK */
+    .countdown-container {
+        top: 90px;
+        left: 0;
+    }
+    /*KEY POSITIONS DESCRIPTION*/
+    .key-positions {
+        top: 180px;
+    }
+    /*CABINET*/
+    .cabinet {
+        top: 120%;
+    }
+    .cabinet .shelf .bottle {}
+    .lg-hide {
+        display: block;
+    }
+    .cabinet .shelf .bottle .label {
+        width: 40px !important;
+        height: 40px !important;
+        top: -25px;
+    }
+    .cabinet .shelf {
+        height: 7%;
+    }
+    .cabinet .shelf .sign {
+        font-size: 9px;
+        padding: 4px !important;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    /* CLOCK */
+    .countdown-container {
+        top: 90px;
+        left: 0;
+    }
+    /*KEY POSITIONS DESCRIPTION*/
+    .key-positions {
+        top: 180px;
+    }
+    /*CABINET*/
+    .cabinet {
+        /*top: 100%;*/
+        zoom: .7;
+        top: 35%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2150px) {
+    /*CABINET*/
+    .cabinet {
+        zoom: .7;
+        top: 35%;
+    }
+}
+
+@media (min-width: 1024px) {
+     /*CABINET*/
+    .cabinet {
+        zoom: .8;
+        top: 15%;
+    }
+
+}

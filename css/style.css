@@ -4,20 +4,6 @@ body {
     /*background: black;*/
 }
 
-h2 {
-    /* text-align: center;*/
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-}
-
-p {
-    /*  text-align: center;*/
-    color: white;
-    font-size: 14px;
-    /*  margin: 0px 500px;*/
-}
-
 
 /***HEADER****/
 
@@ -90,6 +76,10 @@ body,
     height: 100%;
 }
 
+#background-elm {
+    position: relative;
+}
+
 #background-img {
     margin-top: 100px;
     text-align: center;
@@ -99,6 +89,8 @@ body,
     background-position: center;
     position: absolute;
     width: 100%;
+    top: 0;
+    bottom: 0;
 }
 
 #main-content {
@@ -116,10 +108,26 @@ body,
 
 .key-positions {
     text-align: center;
-    margin: 0px 20%;
+    margin: 0px 25%;
     padding: 10px;
     position: absolute;
-    top: 81px;
+    top: 100px;
+    /*    background-color: #312c25;
+    opacity: 0.5;*/
+}
+
+.key-positions > h2 {
+    /* text-align: center;*/
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.key-positions > p {
+    /*  text-align: center;*/
+    color: white;
+    font-size: 16px;
+    /*  margin: 0px 500px;*/
 }
 
 
@@ -200,12 +208,14 @@ body,
     pointer-events: initial;
 }
 
-.circle-list img.circle-list-item-img {
+.circle-list .circle-list-item-img {
     transition: opacity 300ms ease;
     width: 120px;
     height: 120px;
     border-radius: 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+    background-size: cover;
+    background-position: center;
 }
 
 .circle-list.close li {
@@ -284,8 +294,8 @@ div.position-bios .bio-item.active {
     transform: scale(1.2);
 }
 
-.circle-list > ul > li > a:hover img.circle-list-item-img,
-.circle-list > ul > li.active > a img.circle-list-item-img {
+.circle-list > ul > li > a:hover .circle-list-item-img,
+.circle-list > ul > li.active > a .circle-list-item-img {
     opacity: .2;
 }
 
@@ -357,7 +367,7 @@ div.position-bios .bio-item.active {
     pointer-events: none;
 }
 
-.circle-list li.candidate-confirmed img,
+.circle-list li.candidate-confirmed .circle-list-item-img,
 .circle-list li.candidate-confirmed span {
     border: 7px solid #006400;
 }
@@ -397,12 +407,18 @@ div.position-bios .bio-item.active {
 .countdown-container {
     text-align: center;
     position: absolute;
-    top: 0px;
+    top: 54px;
     right: 0;
     margin: 0 auto;
 }
 
-html,
+#countdown-label {
+    background-color: black;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #C6A15A;
+}
+
 body {
     overflow-x: hidden;
     position: relative;
@@ -420,11 +436,14 @@ body {
     }
     /*KEY POSITIONS DESCRIPTION*/
     .key-positions {
-        top: 180px;
+        top: 210px;
+    }
+    .key-positions > p {
+        font-size: 14px;
     }
     /*CABINET*/
     .cabinet {
-        top: 120%;
+        top: 600px;
     }
     .cabinet .shelf .bottle {}
     .lg-hide {
@@ -452,13 +471,16 @@ body {
     }
     /*KEY POSITIONS DESCRIPTION*/
     .key-positions {
-        top: 180px;
+        top: 210px;
+    }
+    .key-positions > p {
+        font-size: 14px;
     }
     /*CABINET*/
     .cabinet {
         /*top: 100%;*/
         zoom: .7;
-        top: 35%;
+        top: 620px;
     }
 }
 
@@ -466,15 +488,26 @@ body {
     /*CABINET*/
     .cabinet {
         zoom: .7;
-        top: 35%;
+        top: 450px;
+    }
+    /*KEY POSITIONS DESCRIPTION*/
+    .key-positions {
+        top: 120px;
     }
 }
 
-@media (min-width: 1024px) {
-     /*CABINET*/
+@media (min-width: 2150px) and (max-width: 3000px) {
+    /*CABINET*/
     .cabinet {
         zoom: .8;
-        top: 15%;
+        top: 400px;
     }
+}
 
+@media (min-width: 3000px) {
+    /*CABINET*/
+    .cabinet {
+        zoom: .8;
+        top: 550px;
+    }
 }

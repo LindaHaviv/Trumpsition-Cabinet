@@ -2,19 +2,26 @@
 
 /*credit: http://codepen.io/AdamMurray/pen/bNxabv */
 
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+
 /*body {
   background: #C7EFCF;
 }*/
 .cabinet {
     position: absolute;
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: 1100px;
     border: 10px solid #69342b;
     box-sizing: border-box;
     -webkit-perspective: 3000;
     margin: auto;
     position: absolute;
-    top: 200px; left: 0; bottom: 0; right: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
 }
 .cabinet .cabinet-top {
     width: 104%;
@@ -142,7 +149,7 @@
 .cabinet .shelf {
     position: relative;
     width: 100%;
-    height: 20%;
+    height: 11%;
     box-sizing: border-box;
 }
 .cabinet .shelf .sign {
@@ -153,6 +160,7 @@
     padding: 5px;
     background: #7b3d32;
     z-index: 1;
+    font-size: 12px;
 }
 .cabinet .shelf .back {
     position: absolute;
@@ -183,12 +191,23 @@
 }
 .cabinet .shelf .bottle {
     height: 67%;
-    width: 9%;
+    width: 8%;
     position: relative;
     display: inline-block;
     margin-top: 45px;
     margin-left: 5%;
+    transition: all 300ms ease;
 }
+
+.bottle.unselected {
+    opacity: 0.5;
+}
+
+.bottle.selected {
+    transform: scale(1.3) translateZ(0);
+    backface-visibility: hidden;
+}
+
 .cabinet .shelf .bottle:hover .cap {
     background: #d9cfca;
     box-shadow: inset 4px 1px 3px #aaa, 0 0 10px #fff;
@@ -198,7 +217,7 @@
 }
 .cabinet .shelf .bottle:hover .note {
     opacity: 1;
-    height: 150px;
+    height: 80px;
 }
 .cabinet .shelf .bottle .cap {
     position: relative;
@@ -236,16 +255,22 @@
     background-position: 50%;
     background-color: #fff;
     position: absolute;
-    top: -40px;
+    top: -35px;
     left: -15px;
     box-sizing: border-box;
     border-radius: 100%;
     box-shadow: inset 4px 0px 5px #aaa, 0 0 7px black;
 }
+.cabinet .shelf .bottle .position-name {
+    color: white;
+    display: inline;
+    font-size: 10px;
+
+}
 .cabinet .shelf .bottle .note {
     opacity: 0;
     height: 0px;
-    width: 200px;
+    width: 150px;
     background:#f5e9dc;
     /*background: #d0a1a8;*/
     position: absolute;
@@ -255,12 +280,33 @@
     pointer-events: none;
     transition-duration: .6s;
 }
-.cabinet .shelf .bottle .note h2,
+.cabinet .shelf .bottle .note h2{
+     color: #c9828c;
+     font-size: 10px;
+}
 .cabinet .shelf .bottle .note p {
-    color: #d0a1a8;
+    color: #c9828c;
+    font-size: 16px;
 }
 
-
 .last-shelf {
-    height: 500px;
+    height: 600px !important;
+}
+
+.bottle {
+     cursor: pointer;
+}
+
+.cabinet .shelf .bottle .position-name {
+    color: white;
+    display: inline;
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    text-align: center;
+    right: 7px;
+    background: navy;
+    border-radius: 7px;
+    font-weight: bold;
 }

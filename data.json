@@ -2,6 +2,7 @@
   "cabinetPositions": [
     {
       "title": "Commerce Secretary",
+      "abr_title": "Commerce",
       "description": "The Commerce Department has been a perennial target for budget cuts, but the secretary oversees a diverse portfolio, including the census, the Bureau of Economic Analysis and the National Oceanic and Atmospheric Administration.",
       "senate_confirmation": true,
       "predictions": [
@@ -15,6 +16,7 @@
     },
     {
       "title": "Education Secretary",
+      "abr_title": "Education",
       "description": "Mr. Trump has said he wants to drastically shrink the Education Department and shift responsibilities for curriculum research, development and educational aid to state and local governments.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -29,6 +31,7 @@
     },
     {
       "title": "U.N. Ambassador",
+      "abr_title": "U.N.",
       "description": "Second to the secretary of state, the United States ambassador to the United Nations will be the primary face of America to the world, representing the country’s interests at the Security Council on a host of issues, from Middle East peace to nuclear proliferation.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -43,6 +46,7 @@
     },
     {
       "title": "Secretary of Housing and Urban Development",
+      "abr_title": "HUD",
       "description": "The secretary oversees fair-housing laws, the development of affordable housing and access to mortgage insurance. As a real-estate developer, Mr. Trump is attuned to the tax breaks for housing development.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -57,6 +61,7 @@
     },
     {
       "title": "C.I.A. Director",
+      "abr_title": "C.I.A.",
       "description": "Mr. Trump takes over at a time of diverse and complex threats to American security. The new C.I.A. director will have to decide whether to undo a C.I.A. “modernization” plan put in place this year by Director John O. Brennan, and how to proceed if the president-elect orders a resumption of harsh interrogation tactics — critics have described the tactics as torture — for terrorism suspects.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -71,6 +76,7 @@
     },
     {
       "title": "Attorney General",
+      "abr_title": "Attorney General",
       "description": "The nation's top law enforcement official will have the authority for carrying out Mr. Trump's “law and order” platform. The nominee can change how civil rights laws are enforced.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -85,6 +91,7 @@
     },
     {
       "title": "National Security Adviser",
+      "abr_title": "Nat. Sec. Adviser",
       "description": "The national security adviser, although not a member of the cabinet, is a critical gatekeeper for policy proposals from the State Department, the Pentagon and other agencies, a function that takes on more importance given Mr. Trump's lack of experience in elective office.",
       "senate_confirmation": false,
       "confirmed": true,
@@ -92,13 +99,14 @@
         {
           "name": "Michael T. Flynn",
           "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/flynn-300.jpg",
-          "description": "Mr. Trump has selected the retired Army lieutenant general and former director of the Defense Intelligence Agency. General Flynn has been outspoken about his view of the threat posed by Islamist militancy and was an <a href=\"http://www.nytimes.com/2016/10/19/us/politics/michael-flynn-donald-trump.html\">ardent supporter of Mr. Trump during the campaign</a>.",
+          "description": "Mr. Trump has selected the retired Army lieutenant general and former director of the Defense Intelligence Agency. General Flynn has been outspoken about his view of the threat posed by Islamist militancy and was an ardent supporter of Mr. Trump during the campaign.",
           "confirmed": true
         }
       ]
     },
     {
       "title": "White House Chief of Staff",
+      "abr_title": "Chief of Staff",
       "description": "The chief of staff manages the work and personnel of the West Wing, steering the president's agenda and tending to important relationships. The role will take on outsize importance in a White House run by Mr. Trump, who has no experience in policy making and little in the way of connections to critical players in Washington.",
       "senate_confirmation": false,
       "confirmed": true,
@@ -113,6 +121,7 @@
     },
     {
       "title": "Chief Strategist",
+      "abr_title": "Chief Strategist",
       "description": "Stephen K. Bannon was also considered for chief of staff, but Mr. Trump instead named him chief strategist and senior counselor in the White House, saying that he and Mr. Priebus would be “working as equal partners” in the administration.",
       "senate_confirmation": false,
       "confirmed": true,
@@ -120,13 +129,14 @@
         {
           "name": "Stephen K. Bannon",
           "image": "https://static01.nyt.com/newsgraphics/2016/11/11/trump-tracker/assets/images/bannon-300.jpg",
-          "description": "Also on Nov. 13, Mr. Trump announced the appointment of Mr. Bannon, a right-wing media executive and the chairman of the president-elect&#x2019;s campaign. <a href=\"http://www.nytimes.com/2016/11/15/us/politics/donald-trump-presidency.html\">Many have denounced the move</a>, warning that Mr. Bannon represents racist views.",
+          "description": "Also on Nov. 13, Mr. Trump announced the appointment of Mr. Bannon, a right-wing media executive and the chairman of the president-elect's campaign. Many have denounced the move, warning that Mr. Bannon represents racist views.",
           "confirmed": true
         }
       ]
     },
     {
       "title": "Secretary of State",
+      "abr_title": "State",
       "description": "Whether Mr. Trump picks an ideologue or a seasoned foreign policy hand from past Republican administrations, his challenge will be that the State Department is the centerpiece of the post-1945 experiment of alliance-building and globalism, which Mr. Trump said he would dismantle.",
       "senate_confirmation": true,
       "confirmed": false,
@@ -170,6 +180,7 @@
     },
     {
       "title": "Treasury Secretary",
+      "abr_title": "Treasury",
       "description": "The secretary will be responsible for government borrowing in financial markets, assisting in any rewrite of the tax code and overseeing the Internal Revenue Service. The Treasury Department also carries out or lifts financial sanctions against foreign enemies — which are key to President Obama’s Iran deal and rapprochement with Cuba.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -199,6 +210,7 @@
     },
     {
       "title": "Defense Secretary",
+      "abr_title": "Defense",
       "description": "The incoming secretary will shape the fight against the Islamic State while overseeing a military that is struggling to put in place two Obama-era initiatives: integrating women into combat roles and allowing transgender people to serve openly. Both could be rolled back.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -233,6 +245,7 @@
     },
     {
       "title": "Director of National Intelligence",
+      "abr_title": "D.N.I.",
       "description": "The person who holds this post is the president’s principal adviser on intelligence and oversees the entire military and civilian intelligence apparatus. The coordination between the intelligence agencies of the military and civilian wings will be vital for the war on the Islamic State.",
       "senate_confirmation": true,
       "confirmed": false,
@@ -251,6 +264,7 @@
     },
     {
       "title": "Interior Secretary",
+      "abr_title": "Interior",
       "description": "The Interior Department manages the nation’s public lands and waters. The next secretary will decide the fate of Obama-era rules that stop public land development; curb the exploration of oil, coal and gas; and promote wind and solar power on public lands.",
       "senate_confirmation": true,
       "confirmed": false,
@@ -284,6 +298,7 @@
     },
     {
       "title": "Agriculture Secretary",
+      "abr_title": "Agriculture",
       "description": "The agriculture secretary oversees America's farming industry, inspects food quality and provides income-based food assistance. The department also helps develop international markets for American products, giving the next secretary partial responsibility to carry out Mr. Trump's positions on trade.",
       "senate_confirmation": true,
       "confirmed": false,
@@ -312,6 +327,7 @@
     },
     {
       "title": "Labor Secretary",
+      "abr_title": "Labor",
       "description": "The Labor Department enforces rules that protect the nation’s workers, distributes benefits to the unemployed and publishes economic data like the monthly jobs report. The new secretary will be in charge of keeping Mr. Trump’s promise to dismantle many Obama-era rules covering the vast work force of federal contractors.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -331,9 +347,10 @@
     },
     {
       "title": "Health and Human Services Secretary",
+      "abr_title": "H.H.S.",
       "description": "The secretary will help Mr. Trump achieve one of his central campaign promises: to repeal and replace the Affordable Care Act. The department approves new drugs, regulates the food supply, operates biomedical research, and runs Medicare and Medicaid, which insure more than 100 million people.",
       "senate_confirmation": true,
-      "confirmed": false,
+      "confirmed": true,
       "predictions": [
         {
           "name": "Mike Huckabee",
@@ -348,7 +365,8 @@
         {
           "name": "Tom Price",
           "image": "http://www.unitedliberty.org/files/images/price.jpg",
-          "description": "Representative from Georgia"
+          "description": "Representative from Georgia",
+          "confirmed": true
         },
         {
           "name": "Rick Scott",
@@ -357,8 +375,24 @@
         }
       ]
     },
+       {
+      "title": "White House Counsel",
+      "abr_title": "WH Counsel",
+      "description": "As the president’s adviser on legal matters, the White House counsel may have an unusually daunting job in the Trump administration, given Mr. Trump’s far-reaching business empire and potential conflicts of interest.",
+      "senate_confirmation": false,
+      "confirmed": true,
+      "predictions": [
+        {
+          "name": "Donald F. McGahn II",
+          "image": "http://www.jonesday.com/files/Professional/70712896-c411-4175-864f-d9693e20f91e/Presentation/Photo/DonaldMcGahn.jpg",
+          "description": "Mr. Trump has chosen Mr. McGahn, who served as general counsel for the Trump campaign. Mr. McGahn, a Washington lawyer who pushed to deregulate campaign finance and election laws, served on the Federal Election Commission for five years.",
+          "confirmed": true
+        }
+      ]
+    },
     {
       "title": "Energy Secretary",
+      "abr_title": "Energy",
       "description": "Despite its name, the primary purview of the Energy Department is to protect and manage the nation’s arsenal of nuclear weapons.",
       "senate_confirmation": true,
       "confirmed": false,
@@ -382,6 +416,7 @@
     },
     {
       "title": "Secretary of Veterans Affairs",
+      "abr_title": "VA",
       "description": "The secretary will face the task of improving the image of a department Mr. Trump has widely criticized. Mr. Trump repeatedly argued that the Obama administration neglected the country's veterans, and he said that improving their care was one of his top priorities.",
       "senate_confirmation": true,
       "confirmed": false,
@@ -400,6 +435,7 @@
     },
     {
       "title": "Homeland Security Secretary",
+      "abr_title": "Homeland Security",
       "description": "The hodgepodge agency, formed after the attacks of Sept. 11, 2001, has one key role in the Trump administration: guarding the United States’ borders. If Mr. Trump makes good on his promises of widespread deportations and building a wall, this secretary will have to carry them out.",
       "senate_confirmation": true,
       "confirmed": true,
@@ -439,6 +475,7 @@
     },
     {
       "title": "E.P.A. Administrator",
+      "abr_title": "E.P.A.",
       "description": "The Environmental Protection Agency, which issues and oversees environmental regulations, is under threat from the president-elect, who has vowed to dismantle the agency “in almost every form.”",
       "senate_confirmation": true,
       "confirmed": true,
@@ -468,6 +505,7 @@
     },
     {
       "title": "U.S. Trade Representative",
+      "abr_title": "U.S. Trade Rep.",
       "description": "The president’s chief trade negotiator will have the odd role of opposing new trade deals, trying to rewrite old ones and bolstering the enforcement of what Mr. Trump sees as unfair trade, especially with China.",
       "senate_confirmation": true,
       "confirmed": false,
@@ -481,6 +519,7 @@
     },
     {
       "title": "Transportation Secretary",
+      "abr_title": "Transportation",
       "description": "The next transportation secretary will oversee Mr. Trump’s campaign pledge to increase infrastructure funding to rebuild America's roads, bridges, airports and transit systems.",
       "senate_confirmation": true,
       "confirmed": true,

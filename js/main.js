@@ -1,7 +1,7 @@
 $(function () {
 
     var $activeBio = null;
-
+    var isSmallDevice = window.innerWidth < 700;
 
     $.fn.circleList = function (data, opts, optsMember) {
         var $self = this;
@@ -21,7 +21,7 @@ $(function () {
         var $liTemplate = $(
                "<li class='candidate-item'>"
              + "   <a class='circle-list-item'>"
-             + "           <img src='' class='circle-list-item-img'>"
+             + "           <div class='circle-list-item-img'></div>"
              + "           <span class='circle-list-item-label'></span>"
              + "    </a>"
              + "</li>"
@@ -35,12 +35,12 @@ $(function () {
 
         $ul.append(data.map(function (c) {
             var $newItem = $liTemplate.clone();
-            var $img = $("img", $newItem);
+            var $img = $(".circle-list-item-img", $newItem);
             var $label = $(".circle-list-item-label", $newItem);
             var $bio = $(".position-bios", $newItem);
 
             if (c.image) {
-                $img.attr("src", c.image);
+                $img.css("background-image", "url('" + c.image + "')");
             } else {
                 $img.remove();
                 $newItem.addClass("no-image");
@@ -87,7 +87,7 @@ $(function () {
             $("span", $li).css("transform", "rotate(" + (-d) + "deg)");
             $(".circle-list-item-label", $li).css("transform", "rotate(" + (-d) + "deg)");
             if (isOpened) {
-                $("img", $li).css("transform", "rotate(" + (-d) + "deg)");
+                $(".circle-list-item-img", $li).css("transform", "rotate(" + (-d) + "deg)");
             }
         }
 
@@ -171,7 +171,7 @@ $(function () {
             });
             $newItem.attr("data-position-title", currentPosition.title);
 
-            currentPosition.predictions.forEach(c => {
+            currentPosition.predictions.forEach(function (c) {
                 c._ = currentPosition;
             });
 
@@ -206,22 +206,25 @@ $(function () {
 
         var $bottleTemplate = $(".templates .bottle");
         var $cabinetContainer = $(".cabinet");
+
         function addPositionBottle (cPosition, $shelf) {
             var $newItem = $bottleTemplate.clone();
-            var noteText = "<h2>" + cPosition.title + "</h2>";
+            // var noteText = "<h2>" + cPosition.title + "</h2>";
+            var noteText="<p> awaiting confirmation...</p>" ;
             if (cPosition.confirmedCandidate) {
                 $(".label", $newItem).css("background-image", "url(" + cPosition.confirmedCandidate.image + ")");
-                noteText += "<p>Confirmed: <strong>" + cPosition.confirmedCandidate.name + "</strong></p>";
+                noteText = "<p>Confirmed: <strong>" + cPosition.confirmedCandidate.name + "</strong></p>";
             }
             $(".note", $newItem).html(noteText);
+            $(".position-name", $newItem).text(cPosition.abr_title)
             $newItem.data("position", cPosition);
             $shelf.append($newItem);
         }
 
         function renderPositions() {
             var _allPositions = [].concat(doRequireSenateConfirmation);
-            var perRow = 6;
-            var $shelfs = $(".shelf", $cabinetContainer);
+            var perRow = isSmallDevice ? 5 : 7;
+            var $shelfs = $(".shelf:visible", $cabinetContainer);
 
             var $firstShelf = $shelfs.first();
             doNotRequireSenateConfirmation.forEach(function (c) {
@@ -240,9 +243,8 @@ $(function () {
 
         renderPositions();
 
-
         $('.carousel').carousel({
-            dist: -70,
+            dist: -200,
             padding: 40
         }).css("opacity", 0);
 
@@ -270,11 +272,11 @@ $(function () {
 
     //CABINET
     $('.door').click(function() {
-    setTimeout(function() {
+    // setTimeout(function() {
         $('.door').toggleClass('clicked');
-    }, 1000);
+    // }, 1000);
     })
-    $(".door").click();
+    //$(".door").click();
 
 
     //gray out other candidates that are not confirmed and add green border to one that is.
@@ -336,9 +338,19 @@ $(function () {
 
 
     $(document).on("click", ".bottle", function () {
+        var $bottles = $(".bottle");
         var $this = $(this);
+        $bottles.removeClass("selected").addClass("unselected");
+        $this.addClass("selected").removeClass("unselected");
         var cPosition = $this.data("position");
-        $(".cabinet-position[data-position-title='" + cPosition.title + "'] .circle-list button").click();
+        var $btn = $(".cabinet-position[data-position-title='" + cPosition.title + "'] .circle-list button");
+        $btn.click();
+        //if (isSmallDevice) {
+            $("html, body").animate({
+                scrollTop: $(".list-of-positions").offset().top
+            });
+            return false;
+        //}
     });
 
     // http://hilios.github.io/jQuery.countdown/
@@ -356,6 +368,10 @@ $(function () {
     // .on('finish.countdown', function(event) {
     //  $(this).html('This offer has expired!')
     //    .parent().addClass('disabled');
-
     // });
+
+    $(window).resize(function () {
+        $("#background-elm").css("height", $(document).height());
+    }).resize();
 });
+

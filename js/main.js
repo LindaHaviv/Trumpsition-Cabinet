@@ -1,30 +1,29 @@
-$(function () {
+$(function() {
+
+
+
+    //***********************************CIRCLE LIST FUNCITONALITY***********************************************************//
 
     var $activeBio = null;
     var isSmallDevice = window.innerWidth < 700;
 
-    $.fn.circleList = function (data, opts, optsMember) {
+    $.fn.circleList = function(data, opts, optsMember) {
         var $self = this;
 
         opts = $.extend({
-            buttonTextClose: "Open"
-          , buttonTextOpen: "Close"
-          , hoverText: ""
+            buttonTextClose: "Open",
+            buttonTextOpen: "Close",
+            hoverText: ""
         }, opts);
 
         optsMember = $.extend({
-            buttonTextClose: "Open"
-          , buttonTextOpen: "Close"
-          , hoverText: ""
+            buttonTextClose: "Open",
+            buttonTextOpen: "Close",
+            hoverText: ""
         }, optsMember);
 
         var $liTemplate = $(
-               "<li class='candidate-item'>"
-             + "   <a class='circle-list-item'>"
-             + "           <div class='circle-list-item-img'></div>"
-             + "           <span class='circle-list-item-label'></span>"
-             + "    </a>"
-             + "</li>"
+            "<li class='candidate-item'>" + "   <a class='circle-list-item'>" + "           <div class='circle-list-item-img'></div>" + "           <span class='circle-list-item-label'></span>" + "    </a>" + "</li>"
         );
 
         var $circleList = $("<div>", { "class": "circle-list" });
@@ -33,7 +32,7 @@ $(function () {
         var $button = $("<button class='position-title'>").appendTo($circleList).text(opts.buttonText);
         var $hoverText = $("<div>", { "class": "hover-text", html: opts.hoverText }).appendTo($circleList);
 
-        $ul.append(data.map(function (c) {
+        $ul.append(data.map(function(c) {
             var $newItem = $liTemplate.clone();
             var $img = $(".circle-list-item-img", $newItem);
             var $label = $(".circle-list-item-label", $newItem);
@@ -65,7 +64,7 @@ $(function () {
 
             $newItem.data("candidate", c);
             if (c.confirmed) {
-              $newItem.addClass("candidate-confirmed");
+                $newItem.addClass("candidate-confirmed");
             }
 
             return $newItem;
@@ -74,15 +73,15 @@ $(function () {
         var $liElms = $ul.children();
         $self.empty().append($circleList);
 
-        $button.hover(function () {
+        $button.hover(function() {
             $circleList.addClass("hovered");
             $button.text("");
-        }, function () {
+        }, function() {
             $circleList.removeClass("hovered");
             $button.text(opts.buttonTextOpen);
         });
 
-        function rotate($li,d) {
+        function rotate($li, d) {
             $li.css("transform", "rotate(" + d + "deg)");
             $("span", $li).css("transform", "rotate(" + (-d) + "deg)");
             $(".circle-list-item-label", $li).css("transform", "rotate(" + (-d) + "deg)");
@@ -92,9 +91,10 @@ $(function () {
         }
 
         var angleStart = -360;
+
         function rotateElms(s) {
             var deg = 360 / $liElms.length;
-            for(var i = 0; i < $liElms.length; ++i) {
+            for (var i = 0; i < $liElms.length; ++i) {
                 var d = i * deg;
                 var $cLi = $liElms.eq(i);
                 rotate($cLi, isOpened ? d : angleStart);
@@ -104,12 +104,12 @@ $(function () {
         //FOR MAIN CIRCLE LIST
         var isOpened = false;
 
-        $self.on("circlelist:toggle", function () {
+        $self.on("circlelist:toggle", function() {
             isOpened = !isOpened;
             $self.trigger("circlelist:" + (isOpened ? "open" : "close"));
         });
 
-        $self.on("circlelist:open", function () {
+        $self.on("circlelist:open", function() {
             isOpened = true;
             rotateElms();
             $circleList.removeClass("close");
@@ -118,7 +118,7 @@ $(function () {
             $button.html(opts.buttonTextOpen);
         });
 
-        $self.on("circlelist:close", function () {
+        $self.on("circlelist:close", function() {
             isOpened = false;
             rotateElms();
             $circleList.addClass("close");
@@ -129,15 +129,16 @@ $(function () {
 
         $self.trigger("circlelist:close");
 
-        $button.click(function () {
+        $button.click(function() {
             $self.trigger("circlelist:toggle");
         });
 
         //make candidates themselves clickable
-        $('.candidate-item', $self).on('click', function () {
+        $('.candidate-item', $self).on('click', function() {
             var $this = $(this);
             var $bio = $("[data-name='" + $this.data("candidate").name + "']", $self);
-            if ($bio.hasClass("active")) { return; }
+            if ($bio.hasClass("active")) {
+                return; }
             setTimeout(function() {
                 $activeBio = $bio;
                 $(".bio-item", $self).removeClass("active");
@@ -150,7 +151,7 @@ $(function () {
     };
 
 
-    $.getJSON("data.json", function (data) {
+    $.getJSON("data.json", function(data) {
         var $listOfPositions = $(".list-of-positions");
         var $cabinetPosition = $(".templates .cabinet-position");
 
@@ -158,9 +159,9 @@ $(function () {
         var confirmedCandidates = [];
         var unconfirmedCandidates = [];
 
-        $listOfPositions.html(data.cabinetPositions.map(function (currentPosition) {
+        $listOfPositions.html(data.cabinetPositions.map(function(currentPosition) {
             var $newItem = $cabinetPosition.clone();
-            $newItem.circleList(currentPosition.predictions.map(function (c) {
+            $newItem.circleList(currentPosition.predictions.map(function(c) {
                 c.label = c.name;
                 c.bio = c.description;
                 return c;
@@ -171,13 +172,13 @@ $(function () {
             });
             $newItem.attr("data-position-title", currentPosition.title);
 
-            currentPosition.predictions.forEach(function (c) {
+            currentPosition.predictions.forEach(function(c) {
                 c._ = currentPosition;
             });
 
             allCandidates = allCandidates.concat(currentPosition.predictions);
 
-            var confirmedCandidate = currentPosition.predictions.filter(function (c) {
+            var confirmedCandidate = currentPosition.predictions.filter(function(c) {
                 return c.confirmed;
             })[0];
 
@@ -191,29 +192,32 @@ $(function () {
             return $newItem;
         }));
 
+
+        //***********************************CABINET FUNCTIONALITY***********************************************************//
+
         var cabinetPositions = data.cabinetPositions;
-        var doNotRequireSenateConfirmation = cabinetPositions.filter(function (c) {
+        var doNotRequireSenateConfirmation = cabinetPositions.filter(function(c) {
             return !c.senate_confirmation;
         });
 
-        var doRequireSenateConfirmation = cabinetPositions.filter(function (c) {
-            return c.senate_confirmation
+        var doRequireSenateConfirmation = cabinetPositions.filter(function(c) {
+            return c.senate_confirmation;
         });
 
-        doRequireSenateConfirmation.sort(function (a, b) {
+        doRequireSenateConfirmation.sort(function(a, b) {
             return a.confirmed ? 1 : -1;
         });
 
         var $bottleTemplate = $(".templates .bottle");
         var $cabinetContainer = $(".cabinet");
 
-        function addPositionBottle (cPosition, $shelf) {
+        function addPositionBottle(cPosition, $shelf) {
             var $newItem = $bottleTemplate.clone();
             // var noteText = "<h2>" + cPosition.title + "</h2>";
-            var noteText="<p> awaiting confirmation...</p>" ;
+            var noteText = "<p> awaiting confirmation...</p>";
             if (cPosition.confirmedCandidate) {
                 $(".label", $newItem).css("background-image", "url(" + cPosition.confirmedCandidate.image + ")");
-                noteText = "<p>Confirmed: <strong>" + cPosition.confirmedCandidate.name + "</strong></p>";
+                noteText = "<p>Confirmed: <br><strong>" + cPosition.confirmedCandidate.name + "</strong></p>";
             }
             $(".note", $newItem).html(noteText);
             $(".position-name", $newItem).text(cPosition.abr_title)
@@ -227,21 +231,33 @@ $(function () {
             var $shelfs = $(".shelf:visible", $cabinetContainer);
 
             var $firstShelf = $shelfs.first();
-            doNotRequireSenateConfirmation.forEach(function (c) {
+            doNotRequireSenateConfirmation.forEach(function(c) {
                 addPositionBottle(c, $firstShelf);
             });
 
-            $shelfs.slice(1).each(function () {
+            $shelfs.slice(1).each(function() {
                 var $cShelf = $(this);
                 for (var i = 0; i < perRow; ++i) {
                     var cPosition = _allPositions.pop();
-                    if (!cPosition) { return; }
+                    if (!cPosition) {
+                        return; }
                     addPositionBottle(cPosition, $cShelf);
                 }
             });
         }
 
         renderPositions();
+
+
+        //CABINET DOORS
+        $('.door').click(function() {
+            // setTimeout(function() {
+            $('.door').toggleClass('clicked');
+            // }, 1000);
+        });
+        $(".door").addClass('clicked');
+
+        //***********************************MAKE CIRCLE LIST CAROUSEL WORK INSIDE CABINET*******************************************************//
 
         $('.carousel').carousel({
             dist: -200,
@@ -253,8 +269,9 @@ $(function () {
             $(window).resize();
         }, 100);
 
-        $(document).add(".candidate-item, .cabinet-position").click(function (e) {
-            if (!$activeBio) { return; }
+        $(document).add(".candidate-item, .cabinet-position").click(function(e) {
+            if (!$activeBio) {
+                return; }
             var $target = $(e.target);
             if (!$target.closest($activeBio).length) {
                 $activeBio.removeClass("active");
@@ -264,42 +281,54 @@ $(function () {
                 $(".candidate-item").removeClass("active");
             }
         });
-        $(".cabinet-position").click(function () {
-            $(".cabinet-position").not(this).trigger("circlelist:close")
+        $(".cabinet-position").click(function() {
+            $(".cabinet-position").not(this).trigger("circlelist:close");
         });
     });
 
+    //make selected member stand out with full opacity and scale
+    $(document).on("click", ".bottle", function() {
+        var $bottles = $(".bottle");
+        var $this = $(this);
+        $bottles.removeClass("selected").addClass("unselected");
+        $this.addClass("selected").removeClass("unselected");
+        var cPosition = $this.data("position");
+        var $btn = $(".cabinet-position[data-position-title='" + cPosition.title + "'] .circle-list button");
+        $btn.click();
+        //scroll to circle list when member is clicked
+        //if (isSmallDevice) {
+        $("html, body").animate({
+            scrollTop: $("#last-shelf").offset().top
+        });
+        return false;
+        //}
+    });
 
-    //CABINET
-    $('.door').click(function() {
-    // setTimeout(function() {
-        $('.door').toggleClass('clicked');
-    // }, 1000);
-    })
-    //$(".door").click();
 
+    //make background photo readjust on resize
+    $(window).resize(function() {
+        $("#background-elm").css("height", $(document).height());
+    }).resize();
 
-    //gray out other candidates that are not confirmed and add green border to one that is.
+    //***********************************CLOCK COUNTDOWN***********************************************************//
 
-    // CLOCK COUNTDOWN
-
-        /**
+    /**
      * Get remaining time
      * @param endtime - date object
      */
     function getTimeRemaining(endtime) {
-      var t = Date.parse(endtime) - Date.parse(new Date());
-      var seconds = Math.floor((t / 1000) % 60);
-      var minutes = Math.floor((t / 1000 / 60) % 60);
-      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-      var days = Math.floor(t / (1000 * 60 * 60 * 24));
-      return {
-        'total': t,
-        'days': days,
-        'hours': hours,
-        'minutes': minutes,
-        'seconds': seconds
-      };
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
     }
 
     /**
@@ -308,27 +337,27 @@ $(function () {
      * @param endtime - date object
      */
     function initializeClock(id, endtime) {
-      var clock = document.getElementById(id);
-      var daysSpan = clock.querySelector('.days');
-      var hoursSpan = clock.querySelector('.hours');
-      var minutesSpan = clock.querySelector('.minutes');
-      var secondsSpan = clock.querySelector('.seconds');
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
 
-      function updateClock() {
-        var t = getTimeRemaining(endtime);
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
 
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-        if (t.total <= 0) {
-          clearInterval(timeinterval);
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
         }
-      }
 
-      updateClock();
-      var timeinterval = setInterval(updateClock, 1000);
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
     }
 
     // Initialize countdown clock
@@ -337,21 +366,6 @@ $(function () {
 
 
 
-    $(document).on("click", ".bottle", function () {
-        var $bottles = $(".bottle");
-        var $this = $(this);
-        $bottles.removeClass("selected").addClass("unselected");
-        $this.addClass("selected").removeClass("unselected");
-        var cPosition = $this.data("position");
-        var $btn = $(".cabinet-position[data-position-title='" + cPosition.title + "'] .circle-list button");
-        $btn.click();
-        //if (isSmallDevice) {
-            $("html, body").animate({
-                scrollTop: $(".list-of-positions").offset().top
-            });
-            return false;
-        //}
-    });
 
     // http://hilios.github.io/jQuery.countdown/
     // $('#clock').countdown('2017/01/20 12:34:56')
@@ -370,8 +384,5 @@ $(function () {
     //    .parent().addClass('disabled');
     // });
 
-    $(window).resize(function () {
-        $("#background-elm").css("height", $(document).height());
-    }).resize();
-});
 
+});

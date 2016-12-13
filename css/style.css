@@ -112,8 +112,7 @@ body,
     padding: 10px;
     position: absolute;
     top: 100px;
-    /*    background-color: #312c25;
-    opacity: 0.5;*/
+    background-color: rgba(242, 200, 121, 0.5);
 }
 
 .key-positions > h2 {
@@ -428,6 +427,79 @@ body {
     display: none;
 }
 
+
+/*title shimmer*/
+
+
+.shimmer {
+    text-align: center;
+    color: rgba(242, 200, 121,0.6);
+    background: -webkit-gradient(linear, left top, right top, from(#C6A15A), to(#C6A15A), color-stop(0.5, #fff));
+    background: -moz-gradient(linear, left top, right top, from(#C6A15A), to(#C6A15A), color-stop(0.5, #fff));
+    background: gradient(linear, left top, right top, from(#C6A15A), to(#C6A15A), color-stop(0.5, #fff));
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 125px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #222;
+}
+
+@-moz-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-o-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+
+/*************************************MEDIA QUERIES************************************/
+
 @media (max-width: 700px) {
     /* CLOCK */
     .countdown-container {
@@ -436,31 +508,34 @@ body {
     }
     /*KEY POSITIONS DESCRIPTION*/
     .key-positions {
-        top: 210px;
+        top: 250px;
     }
     .key-positions > p {
         font-size: 14px;
     }
     /*CABINET*/
     .cabinet {
-        top: 600px;
+        /* top: 600px;*/
+        top: 1200px;
+        zoom: .5;
+        height: 1380px;
     }
-    .cabinet .shelf .bottle {}
+    /*   .cabinet .shelf .bottle {}*/
     .lg-hide {
         display: block;
     }
-    .cabinet .shelf .bottle .label {
+/*    .cabinet .shelf .bottle .label {
         width: 40px !important;
         height: 40px !important;
         top: -25px;
-    }
-    .cabinet .shelf {
+    }*/
+/*    .cabinet .shelf {
         height: 7%;
-    }
-    .cabinet .shelf .sign {
+    }*/
+ /*   .cabinet .shelf .sign {
         font-size: 9px;
         padding: 4px !important;
-    }
+    }*/
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {
@@ -471,7 +546,7 @@ body {
     }
     /*KEY POSITIONS DESCRIPTION*/
     .key-positions {
-        top: 210px;
+        top: 240px;
     }
     .key-positions > p {
         font-size: 14px;
@@ -480,19 +555,20 @@ body {
     .cabinet {
         /*top: 100%;*/
         zoom: .7;
-        top: 620px;
+        top: 690px;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 2150px) {
     /*CABINET*/
     .cabinet {
-        zoom: .7;
+        zoom: .8;
         top: 450px;
     }
     /*KEY POSITIONS DESCRIPTION*/
     .key-positions {
         top: 120px;
+        margin: 0 30%;
     }
 }
 

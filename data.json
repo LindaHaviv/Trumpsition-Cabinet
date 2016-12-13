@@ -3,7 +3,7 @@
     {
       "title": "Commerce Secretary",
       "abr_title": "Commerce",
-      "description": "The Commerce Department has been a perennial target for budget cuts, but the secretary oversees a diverse portfolio, including the census, the Bureau of Economic Analysis and the National Oceanic and Atmospheric Administration.",
+      "description": "The commerce secretary promotes the nation's economy and oversees a diverse portfolio, including the census, the Bureau of Economic Analysis and the National Oceanic and Atmospheric Administration.",
       "senate_confirmation": true,
       "predictions": [
         {
@@ -211,7 +211,7 @@
     {
       "title": "Defense Secretary",
       "abr_title": "Defense",
-      "description": "The incoming secretary will shape the fight against the Islamic State while overseeing a military that is struggling to put in place two Obama-era initiatives: integrating women into combat roles and allowing transgender people to serve openly. Both could be rolled back.",
+      "description": "The defense secretary is the leader and chief executive officer of the Department of Defense",
       "senate_confirmation": true,
       "confirmed": true,
       "predictions": [
@@ -299,7 +299,7 @@
     {
       "title": "Agriculture Secretary",
       "abr_title": "Agriculture",
-      "description": "The agriculture secretary oversees America's farming industry, inspects food quality and provides income-based food assistance. The department also helps develop international markets for American products, giving the next secretary partial responsibility to carry out Mr. Trump's positions on trade.",
+      "description": "The agriculture secretary oversees America's farming industry, inspects food quality and provides income-based food assistance.",
       "senate_confirmation": true,
       "confirmed": false,
       "predictions": [

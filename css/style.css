@@ -4,9 +4,12 @@ body {
     /*background: black;*/
 }
 
+.swal2-content h2 {
+    font-size: 1.5em;
+    color: #C6A15A;;
+}
 
 /***HEADER****/
-
 
 /* credit: https://codepen.io/jaflo/pen/DwFAq */
 
@@ -19,8 +22,13 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    z-index: 10;
 }
 
+html, body {
+    overflow-x: hidden;
+    position: relative;
+}
 
 /*#header {
     position: absolute;
@@ -77,11 +85,16 @@ body,
 }
 
 #background-elm {
-    position: relative;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #background-img {
-    margin-top: 100px;
+    /*! margin-top: 100px; */
     text-align: center;
     background-image: url(https://www.jimmycarterlibrary.gov/museum/ovaloffice.jpg);
     background-size: cover;
@@ -98,7 +111,7 @@ body,
 }
 
 #background-overlay {
-    margin-top: 100px;
+    /*! margin-top: 100px; */
     height: 100%;
     position: absolute;
     background-position: center;
@@ -113,6 +126,7 @@ body,
     position: absolute;
     top: 100px;
     background-color: rgba(242, 200, 121, 0.5);
+    z-index: 10;
 }
 
 .key-positions > h2 {
@@ -315,7 +329,7 @@ div.position-bios .bio-item.active {
 .circle-list.hovered {
     width: 300px;
     height: 300px;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .circle-list.bio-circle {
@@ -338,6 +352,7 @@ div.position-bios .bio-item.active {
     pointer-events: none;
     transform: translateY(-50%);
     color: #fff;
+    transition: all 300ms ease;
 }
 
 .circle-list.hovered .hover-text {
@@ -409,6 +424,7 @@ div.position-bios .bio-item.active {
     top: 54px;
     right: 0;
     margin: 0 auto;
+    z-index: 10;
 }
 
 #countdown-label {
@@ -501,6 +517,9 @@ body {
 /*************************************MEDIA QUERIES************************************/
 
 @media (max-width: 700px) {
+    #clockdiv div>span {
+        padding: 5px;
+    }
     /* CLOCK */
     .countdown-container {
         top: 90px;
@@ -509,33 +528,59 @@ body {
     /*KEY POSITIONS DESCRIPTION*/
     .key-positions {
         top: 250px;
+        display: none;
     }
     .key-positions > p {
         font-size: 14px;
     }
     /*CABINET*/
     .cabinet {
-        /* top: 600px;*/
-        top: 1200px;
+        top: 450px;
         zoom: .5;
+        -moz-transform: scale(0.5)  translateY(-50%);
         height: 1380px;
+        background: rgba(44, 21, 18, 0.48);
+        border: none !important;
+        padding: 12px 0 0px 0;
     }
-    /*   .cabinet .shelf .bottle {}*/
     .lg-hide {
         display: block;
     }
-/*    .cabinet .shelf .bottle .label {
-        width: 40px !important;
-        height: 40px !important;
-        top: -25px;
-    }*/
-/*    .cabinet .shelf {
-        height: 7%;
-    }*/
- /*   .cabinet .shelf .sign {
-        font-size: 9px;
-        padding: 4px !important;
-    }*/
+
+    .cabinet-top {
+        display: none;
+    }
+
+    .cabinet > .door {
+        display: none !important;
+    }
+
+    .cabinet .shelf .base {
+        display: none;
+    }
+
+    .cabinet .shelf .front {
+        display: none;
+    }
+
+    #main-content .cabinet > .shelf {
+        height: 17%;
+    }
+
+    #main-content .cabinet .bottle {
+        width: 13%;
+        top: 20px;
+    }
+
+    #main-content .cabinet .shelf .bottle .label {
+        width: 100px;
+        height: 100px;
+        top: -6px;
+    }
+
+    #main-content .cabinet .shelf .bottle .note {
+        display: none;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {
@@ -555,14 +600,17 @@ body {
     .cabinet {
         /*top: 100%;*/
         zoom: .7;
+        -moz-transform: scale(0.7)  translateY(-30%);
         top: 690px;
+        z-index: 10;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 2150px) {
+@media (min-width: 1025px) and (max-width: 2150px) {
     /*CABINET*/
     .cabinet {
         zoom: .8;
+        -moz-transform: scale(0.8)  translateY(-50%);
         top: 450px;
     }
     /*KEY POSITIONS DESCRIPTION*/
@@ -576,6 +624,7 @@ body {
     /*CABINET*/
     .cabinet {
         zoom: .8;
+        -moz-transform: scale(0.8)  translateY(-50%);
         top: 400px;
     }
 }
@@ -584,6 +633,7 @@ body {
     /*CABINET*/
     .cabinet {
         zoom: .8;
+        -moz-transform: scale(0.8)  translateY(-50%);
         top: 550px;
     }
 }

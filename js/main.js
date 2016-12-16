@@ -1,11 +1,20 @@
 $(function() {
 
-
-
     //***********************************CIRCLE LIST FUNCITONALITY***********************************************************//
 
     var $activeBio = null;
     var isSmallDevice = window.innerWidth < 700;
+
+    if (isSmallDevice) {
+        swal({
+            title: "",
+            html: $(".key-positions").html(),
+            confirmButtonColor: '#C6A15A'
+        });
+        $(".shelf:first").before($("#last-shelf"));
+    }
+
+
 
     $.fn.circleList = function(data, opts, optsMember) {
         var $self = this;
@@ -138,7 +147,8 @@ $(function() {
             var $this = $(this);
             var $bio = $("[data-name='" + $this.data("candidate").name + "']", $self);
             if ($bio.hasClass("active")) {
-                return; }
+                return;
+            }
             setTimeout(function() {
                 $activeBio = $bio;
                 $(".bio-item", $self).removeClass("active");
@@ -220,54 +230,66 @@ $(function() {
                 noteText = "<p>Confirmed: <br><strong>" + cPosition.confirmedCandidate.name + "</strong></p>";
             }
             $(".note", $newItem).html(noteText);
-            $(".position-name", $newItem).text(cPosition.abr_title)
+            $(".position-name", $newItem).text(cPosition.abr_title);
             $newItem.data("position", cPosition);
             $shelf.append($newItem);
         }
+
+        var carouselItemsRendered = false;
 
         function renderPositions() {
             var _allPositions = [].concat(doRequireSenateConfirmation);
             var perRow = isSmallDevice ? 5 : 7;
             var $shelfs = $(".shelf:visible", $cabinetContainer);
 
-            var $firstShelf = $shelfs.first();
+            var $firstShelf = isSmallDevice ? $shelfs.eq(1) : $shelfs.first();
             doNotRequireSenateConfirmation.forEach(function(c) {
                 addPositionBottle(c, $firstShelf);
             });
 
-            $shelfs.slice(1).each(function() {
+            $shelfs.slice(isSmallDevice ? 2 : 1).each(function() {
                 var $cShelf = $(this);
                 for (var i = 0; i < perRow; ++i) {
                     var cPosition = _allPositions.pop();
                     if (!cPosition) {
-                        return; }
+                        return;
+                    }
                     addPositionBottle(cPosition, $cShelf);
                 }
             });
+            carouselItemsRendered = true;
+            initCarousel();
         }
 
         renderPositions();
 
+        var doorsOpened = false;
+        var sliderRendered = false;
 
-        //CABINET DOORS
-        $('.door').click(function() {
-            // setTimeout(function() {
+        function initCarousel() {
+            if (!carouselItemsRendered || sliderRendered || !doorsOpened) {
+                return; }
+            $('.carousel').carousel({
+                dist: -200,
+                padding: 40
+            }).css("opacity", 0);
+
+            $('.carousel').animate({ opacity: 1 });
+            sliderRendered = true;
+        }
+
+        //CABINET
+        function openDoors() {
             $('.door').toggleClass('clicked');
-            // }, 1000);
-        });
-        $(".door").addClass('clicked');
+            doorsOpened = !doorsOpened;
+            setTimeout(function() {
+                initCarousel();
+            }, 1000);
+        }
+        $('.door').click(openDoors);
+        openDoors();
 
         //***********************************MAKE CIRCLE LIST CAROUSEL WORK INSIDE CABINET*******************************************************//
-
-        $('.carousel').carousel({
-            dist: -200,
-            padding: 40
-        }).css("opacity", 0);
-
-        setTimeout(function() {
-            $('.carousel').animate({ opacity: 1 });
-            $(window).resize();
-        }, 100);
 
         $(document).add(".candidate-item, .cabinet-position").click(function(e) {
             if (!$activeBio) {
@@ -284,7 +306,7 @@ $(function() {
         $(".cabinet-position").click(function() {
             $(".cabinet-position").not(this).trigger("circlelist:close");
         });
-    });
+    }); //end?
 
     //make selected member stand out with full opacity and scale
     $(document).on("click", ".bottle", function() {
@@ -306,30 +328,11 @@ $(function() {
 
 
     //make background photo readjust on resize
-    $(window).resize(function() {
-        $("#background-elm").css("height", $(document).height());
-    }).resize();
+    //$(window).resize(function() {
+    //    $("#background-elm").css("height", $(document).height());
+    //}).resize();
 
     //***********************************CLOCK COUNTDOWN***********************************************************//
-
-    /**
-     * Get remaining time
-     * @param endtime - date object
-     */
-    function getTimeRemaining(endtime) {
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var seconds = Math.floor((t / 1000) % 60);
-        var minutes = Math.floor((t / 1000 / 60) % 60);
-        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        return {
-            'total': t,
-            'days': days,
-            'hours': hours,
-            'minutes': minutes,
-            'seconds': seconds
-        };
-    }
 
     /**
      * Initialize clock
@@ -337,23 +340,37 @@ $(function() {
      * @param endtime - date object
      */
     function initializeClock(id, endtime) {
-        var clock = document.getElementById(id);
-        var daysSpan = clock.querySelector('.days');
-        var hoursSpan = clock.querySelector('.hours');
-        var minutesSpan = clock.querySelector('.minutes');
-        var secondsSpan = clock.querySelector('.seconds');
+        var $clock = $("#" + id);
+        var $daysSpan = $('.days');
+        var $hoursSpan = $('.hours');
+        var $minutesSpan = $('.minutes');
+        var $secondsSpan = $('.seconds');
+
+        /**
+         * Get remaining time
+         * @param endtime - date object
+         */
+        function getTimeRemaining(endtime) {
+            let vals = ['days', 'hours', 'minutes', 'seconds'];
+            let now = new Daty();
+            let obj = { total: endtime.diff(now) };
+            vals.forEach(function(c) {
+                obj[c] = endtime.diff(now, c);
+            });
+            return obj;
+        }
 
         function updateClock() {
             var t = getTimeRemaining(endtime);
 
-            daysSpan.innerHTML = t.days;
-            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
             if (t.total <= 0) {
                 clearInterval(timeinterval);
+                t.days = t.hours = t.minutes = t.seconds = 0;
             }
+            $daysSpan.text(t.days);
+            $hoursSpan.text(('0' + t.hours).slice(-2));
+            $minutesSpan.text(('0' + t.minutes).slice(-2));
+            $secondsSpan.text(('0' + t.seconds).slice(-2));
         }
 
         updateClock();
@@ -361,11 +378,9 @@ $(function() {
     }
 
     // Initialize countdown clock
-    var deadline = new Date(Date.parse(new Date()) + 44 * 24 * 60 * 60 * 1000);
+    var deadline = new Daty(2017, 0, 20);
+    //var deadline = new Daty(2016, 0, 20);
     initializeClock('clockdiv', deadline);
-
-
-
 
     // http://hilios.github.io/jQuery.countdown/
     // $('#clock').countdown('2017/01/20 12:34:56')
@@ -383,6 +398,4 @@ $(function() {
     //  $(this).html('This offer has expired!')
     //    .parent().addClass('disabled');
     // });
-
-
 });

@@ -17,7 +17,7 @@
     {
       "title": "Education Secretary",
       "abr_title": "Education",
-      "description": "Mr. Trump has said he wants to drastically shrink the Education Department and shift responsibilities for curriculum research, development and educational aid to state and local governments.",
+      "description": "The Education Secretary is the head of the U.S. Department of Education, proposes and executes legislation that deals with federal influence over Education policy.",
       "senate_confirmation": true,
       "confirmed": true,
       "predictions": [
@@ -77,7 +77,7 @@
     {
       "title": "Attorney General",
       "abr_title": "Attorney General",
-      "description": "The nation's top law enforcement official will have the authority for carrying out Mr. Trump's “law and order” platform. The nominee can change how civil rights laws are enforced.",
+      "description": "The Attorney General is the head of the United States Department of Justice, chief law enforcement officer and chief lawyer of the United States government.",
       "senate_confirmation": true,
       "confirmed": true,
       "predictions": [
@@ -92,7 +92,7 @@
     {
       "title": "National Security Adviser",
       "abr_title": "Nat. Sec. Adviser",
-      "description": "The national security adviser, although not a member of the cabinet, is a critical gatekeeper for policy proposals from the State Department, the Pentagon and other agencies, a function that takes on more importance given Mr. Trump's lack of experience in elective office.",
+      "description": "The national security adviser, although not a member of the cabinet, is a critical gatekeeper for policy proposals from the State Department, the Pentagon and other agencies.",
       "senate_confirmation": false,
       "confirmed": true,
       "predictions": [
@@ -107,7 +107,7 @@
     {
       "title": "White House Chief of Staff",
       "abr_title": "Chief of Staff",
-      "description": "The chief of staff manages the work and personnel of the West Wing, steering the president's agenda and tending to important relationships. The role will take on outsize importance in a White House run by Mr. Trump, who has no experience in policy making and little in the way of connections to critical players in Washington.",
+      "description": "The chief of staff manages the work and personnel of the West Wing, steering the president's agenda and tending to important relationships.",
       "senate_confirmation": false,
       "confirmed": true,
       "predictions": [
@@ -181,7 +181,7 @@
     {
       "title": "Treasury Secretary",
       "abr_title": "Treasury",
-      "description": "The secretary will be responsible for government borrowing in financial markets, assisting in any rewrite of the tax code and overseeing the Internal Revenue Service. The Treasury Department also carries out or lifts financial sanctions against foreign enemies — which are key to President Obama’s Iran deal and rapprochement with Cuba.",
+      "description": "The secretary will be responsible for government borrowing in financial markets, assisting in any rewrite of the tax code and overseeing the Internal Revenue Service. The Treasury Department also carries out or lifts financial sanctions against foreign enemies.",
       "senate_confirmation": true,
       "confirmed": true,
       "predictions": [
@@ -328,7 +328,7 @@
     {
       "title": "Labor Secretary",
       "abr_title": "Labor",
-      "description": "The Labor Department enforces rules that protect the nation’s workers, distributes benefits to the unemployed and publishes economic data like the monthly jobs report. The new secretary will be in charge of keeping Mr. Trump’s promise to dismantle many Obama-era rules covering the vast work force of federal contractors.",
+      "description": "The Labor Department enforces rules that protect the nation’s workers, distributes benefits to the unemployed and publishes economic data like the monthly jobs report.",
       "senate_confirmation": true,
       "confirmed": true,
       "predictions": [
@@ -378,7 +378,7 @@
        {
       "title": "White House Counsel",
       "abr_title": "WH Counsel",
-      "description": "As the president’s adviser on legal matters, the White House counsel may have an unusually daunting job in the Trump administration, given Mr. Trump’s far-reaching business empire and potential conflicts of interest.",
+      "description": "The White House Counsel's role is to advise the President on all legal issues concerning the President and his Administration. ",
       "senate_confirmation": false,
       "confirmed": true,
       "predictions": [

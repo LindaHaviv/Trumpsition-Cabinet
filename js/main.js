@@ -1,5 +1,7 @@
 $(function() {
 
+
+
     //***********************************CIRCLE LIST FUNCITONALITY***********************************************************//
 
     var $activeBio = null;
@@ -228,6 +230,9 @@ $(function() {
             if (cPosition.confirmedCandidate) {
                 $(".label", $newItem).css("background-image", "url(" + cPosition.confirmedCandidate.image + ")");
                 noteText = "<p>Confirmed: <br><strong>" + cPosition.confirmedCandidate.name + "</strong></p>";
+                if (isSmallDevice) {
+                    $(".member-name", $newItem).text(cPosition.confirmedCandidate.name);
+                }
             }
             $(".note", $newItem).html(noteText);
             $(".position-name", $newItem).text(cPosition.abr_title);
@@ -268,7 +273,8 @@ $(function() {
 
         function initCarousel() {
             if (!carouselItemsRendered || sliderRendered || !doorsOpened) {
-                return; }
+                return;
+            }
             $('.carousel').carousel({
                 dist: -200,
                 padding: 40
@@ -287,13 +293,23 @@ $(function() {
             }, 1000);
         }
         $('.door').click(openDoors);
-        openDoors();
+
+        //LOADER
+
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('body').addClass('loaded');
+                openDoors();
+            }, 3000);
+
+        });
 
         //***********************************MAKE CIRCLE LIST CAROUSEL WORK INSIDE CABINET*******************************************************//
 
         $(document).add(".candidate-item, .cabinet-position").click(function(e) {
             if (!$activeBio) {
-                return; }
+                return;
+            }
             var $target = $(e.target);
             if (!$target.closest($activeBio).length) {
                 $activeBio.removeClass("active");
